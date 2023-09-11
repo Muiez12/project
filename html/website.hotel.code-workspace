@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "website.hotel",
+			"path": ".."
+		},
+		{
+			"name": "images",
+			"path": "../../images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5503,
+		"liveServer.settings.multiRootWorkspaceName": "website.hotel"
+	}
+}

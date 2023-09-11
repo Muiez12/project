@@ -1,0 +1,170 @@
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    margin-top: -20px;
+    margin-left: 20px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+
+
+.navbar ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color:black;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: brown;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.9s;
+
+}
+
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+
+
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the header */
+header {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the event content */
+
+
+
+.event {
+    background-image: url(/images/wedding.jpeg); /* Customize your background image here */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    width: 100%;
+    height:90vh;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.event h1 {
+    font-size: 28px;
+    color: #333;
+    font-family: cursive;
+    margin-top: 400px;
+}
+
+.event p {
+    font-size: 20px;
+    color: gold;
+    margin-top: 10px;
+    margin-top: 60px;
+    
+    
+    
+}
+
+/* Style the images */
+
+/* Style the third event container */
+.event3 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.event3 p {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+
+/* Apply styles to the event2 container */
+.event2 {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style the image container */
+.image-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+}
+
+/* Style the img elements within image container */
+.image-container img {
+    max-width: 100%;
+    height: 60vh;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+/* Style the navigation buttons */
+button {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    outline: none;
+}
+
+button.prev {
+    left: 10px;
+    
+}
+
+button.next {
+    right: 10px;
+}
+
+
